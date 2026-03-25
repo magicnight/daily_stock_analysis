@@ -122,6 +122,9 @@ jobs:
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
           EMAIL_RECEIVERS: ${{ vars.EMAIL_RECEIVERS || secrets.EMAIL_RECEIVERS }}
           EMAIL_SENDER_NAME: ${{ vars.EMAIL_SENDER_NAME || secrets.EMAIL_SENDER_NAME || 'daily_stock_analysis股票分析助手' }}
+          EMAIL_GROUP_1: ${{ vars.EMAIL_GROUP_1 || secrets.EMAIL_GROUP_1 }}
+          EMAIL_GROUP_2: ${{ vars.EMAIL_GROUP_2 || secrets.EMAIL_GROUP_2 }}
+          EMAIL_GROUP_3: ${{ vars.EMAIL_GROUP_3 || secrets.EMAIL_GROUP_3 }}
           
           # 方式五：Pushover
           PUSHOVER_USER_KEY: ${{ secrets.PUSHOVER_USER_KEY }}
@@ -160,6 +163,10 @@ jobs:
           # 自选股配置
           # ==========================================
           STOCK_LIST: ${{ vars.STOCK_LIST || secrets.STOCK_LIST || '600519' }}
+          STOCK_GROUP_1: ${{ vars.GROUP_1 || secrets.GROUP_1 }}
+          STOCK_GROUP_2: ${{ vars.GROUP_2 || secrets.GROUP_2 }}
+          STOCK_GROUP_3: ${{ vars.GROUP_3 || secrets.GROUP_3 }}
+          
           MARKET_REVIEW_REGION: ${{ vars.MARKET_REVIEW_REGION || secrets.MARKET_REVIEW_REGION || 'cn' }}
           
           # ==========================================
